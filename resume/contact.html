@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="src/css/mycss.css">
+	<script type="text/javascript">	
+		var mypic;
+		window.onload = function() {
+			mypic = document.getElementById('mypic_file');
+			mypic.addEventListener('change', 
+				function(event){				
+					console.log(event);
+					var curFiles = event.target.files;
+					if(curFiles.length <= 0){
+					//선택한 파일이 없을 경우
+				}else{
+					//선택한 파일이 있을 경우
+					var imgFileURL = window.URL.createObjectURL(event.target.files[0]);
+					console.log("imgFileURL:"+imgFileURL);
+					document.getElementById("mypic").src = imgFileURL;
+				}				
+			});
+		}		
+	</script>
+	<title>연락처</title>
+</head>
+<body>	
+	<a href="index.html"><u><b>홈으로</b></u></a>
+	<div id="body_wrap" class="center_align">
+		<section class="contents">
+			<h3>연락처</h3>
+			<form>
+				<table>
+					<tr>
+						<td>
+							<div id="mypic_container">
+								<img src="src/img/pjw.jpg" alt="사진" id="mypic" width="136" height="187"><br>
+							</div>
+							<input type="file" name="mypic_file" id="mypic_file" accept=".jpg, .jpeg, .png">
+						</td>
+						<td>
+							박종우<br>
+							PARK JONG WOO
+						</td>
+					</tr>
+					<tr>
+						<td>Mobile</td>
+						<td>010-7449-8907</td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td>shoong1999@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td>서울특별시 관악구 난곡로 63 관악산휴먼시아아파트 302동 1205호</td>
+					</tr>
+				</table>
+			</form>	
+		</section>		
+	</div>
+</body>
+</html>

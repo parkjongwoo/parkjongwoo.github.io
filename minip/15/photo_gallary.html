@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #eeeeee;
+			font-family: "돋움";
+			font-size: 12px;
+			color: #666666;
+		}
+		li{
+			list-style-type: none;
+		}
+		.clear{
+			clear: both;
+		}
+		#logo{
+			float: left;
+			font-size: 16px;
+			color: #3e2b23;
+			padding: 10px 0 0 30px;
+		}
+		#top_menu{
+			float: right;
+			padding: 10px 0 0 10px;
+		}
+		#header{
+			width: 800px;
+			height: 40px;
+			background-color: #dddddd;
+		}
+		#left{
+			width: 150px;
+			height: 600px;
+			float: left;
+			background-color: #343333;
+			color: #e2e2e2;			
+		}
+		#left h2{
+			font-weight: normal;
+			padding: 20px 0 0 30px;
+		}
+		#left ul{
+			font-size: 14px;
+			padding: 10px 10px 5px 25px;
+		}
+		#left li{
+			padding: 3px;
+		}
+		#right{
+			width: 650px;
+			height: 600px;
+			background-color: #252525;
+			float: left;
+		}
+		#main_title{
+			width: 572px;
+			padding: 10px;
+			border: solid 5px #444444;
+			margin: 24px 24px 0 24px;
+			font-size: 18px;
+			color: #ffffff;
+			font-weight: bold;
+		}
+		#main_img{
+			padding: 15px 0 0 24px;
+		}
+		#thumbnail{
+			padding: 30px 0 0 70px;
+		}
+		#thumbnail #move_left{
+			float: left;
+			margin: 20px 5px 0 40px;
+		}
+		#photos{
+			float: left;
+			margin-top: 3px;
+		}
+		#thumbnail #move_right{
+			float: left;
+			margin: 20px 0 0 20px;
+		}
+		#thumbnail #photos li{
+			margin-left: 10px;
+			display: inline;
+		}
+		#thumbnail #photos img{			
+			border: solid 5px #3d3d3d;
+		}
+		#thumbnail #photos a:hover img{
+			border: solid 5px #ffffff;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="logo">PHOTO GALLARY</div>
+		<div id="top_menu">로그인 | 회원가입 | 방명록</div>
+	</div>
+	<div id="left">
+		<h2>포토갤러리</h2>
+		<ul>
+			<li class="submenu">+ 풍경</li>
+			<li class="submenu">+ 일상</li>
+			<li class="submenu">+ 인물</li>
+			<li class="submenu">+ 가족</li>
+		</ul>
+	</div>
+	<div id="right">
+		<div id="main_title">
+			풍경 사진
+		</div>
+		<img id="main_img" src="img/b-1.jpg">
+		<div id="thumbnail">
+			<img id="move_left" src="img/bt_move_left.gif">
+			<ul id="photos">
+				<li><a href="#"><img src="img/s-1.jpg"></a></li>
+				<li><a href="#"><img src="img/s-2.jpg"></a></li>
+				<li><a href="#"><img src="img/s-3.jpg"></a></li>
+				<li><a href="#"><img src="img/s-4.jpg"></a></li>
+				<li><a href="#"><img src="img/s-5.jpg"></a></li>
+			</ul>
+			<img id="move_right" src="img/bt_move_right.gif">
+		</div>
+	</div>
+</body>
+</html>

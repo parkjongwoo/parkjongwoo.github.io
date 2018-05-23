@@ -1,0 +1,58 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 20px;
+	font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+	color: #777777;
+	background-image: url("../img/body_bg.png");
+}
+table, tr, th, td{
+	border-collapse: collapse;
+	border: solid 1px black;
+	padding: 8px;
+}
+h3, th{
+	color: black;
+	font-size: 25px;
+}
+a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+}
+.contents{
+	background-image: url("../img/section_bg.jpg");
+	border: 0; 
+	max-width: 800px;
+}
+.center_align{
+	margin: 0 auto;
+	max-width: 800px;
+}
+#menu{
+	display: inline;
+	list-style-type: none;
+}
+#menu li{
+	display: inline;
+	list-style-type: none;
+}
+#header_wrap{
+	background-color: blue;
+}
+#body_wrap{
+	background-color: blue;
+}
+#footer_wrap{
+	background-color: blue;
+}
+#mypic{
+	width: 136px;
+	height: 187px;
+}
+#mypic_file{
+	width: 136px;
+}
+#mypic_container{
+	align-content: center;
+}

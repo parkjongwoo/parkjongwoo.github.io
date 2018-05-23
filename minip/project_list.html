@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>미니프로젝트 목록</title>
+	<style type="text/css">
+		iframe.projects{
+			width: 100%;
+			height: 400px;
+			border: solid 2px #999999;
+		}
+	</style>
+	<script>
+		window.onload = function(){
+			addingToggleEvent();			
+		}		
+
+		/**
+		**	details 태그가 변경(toggle)될 때 이벤트 발생
+		**/
+		function addingToggleEvent(){
+			var details = document.querySelectorAll("details");
+			details.forEach(function(e){
+				e.addEventListener("toggle", function(obj){
+					iframe = obj.currentTarget.querySelector("iframe");
+					// iframe.width = iframe.contentWindow.document.body.scrollWidth;
+					//iframe.height = iframe.contentWindow.document.body.scrollHeight;
+		    		resizeIframe(iframe);
+				});
+			});
+		}
+		function resizeIframe(e) {
+			// to-do
+			// iframe의 사이즈를 내용에 맞춰 변경.
+
+			// var y;
+			// try{
+			// 	y= (e.contentWindow || e.contentDocument)
+			// 	if (y.document)y = y.document;
+			// }catch(e){
+			// 	console.log(e);
+			// }    		
+    		
+			// if (e.Document && e.Document.body.scrollWidth) //ie5+ syntax
+   //  			e.width = e.contentWindow.document.body.scrollWidth;
+   //  		else if (e.contentDocument && e.contentDocument.body.scrollWidth) //ns6+ & opera syntax
+   //  			e.width = e.contentDocument.body.scrollWidth + 35;
+   //  		else (e.contentDocument && e.contentDocument.body.offsetWidth) //standards compliant syntax – ie8
+   //  			e.width = e.contentDocument.body.offsetWidth + 35;
+		}
+	</script>
+</head>
+<body>
+	<h3>미니프로젝트 목록</h3>
+	<details>
+		<summary>프로젝트 04</summary>
+		<iframe class="projects" src="./04/botanic_garden.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 05</summary>
+		<iframe class="projects" src="./05/recruit.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 06</summary>
+		<iframe class="projects" src="./06/intro.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 07</summary>
+		<iframe class="projects" src="./07/christmas_event.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 08</summary>
+		<iframe class="projects" src="./08/plant_item.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 09</summary>
+		<iframe class="projects" src="./09/visit.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 10</summary>
+		<iframe class="projects" src="./10/english_class2.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 11</summary>
+		<iframe class="projects" src="./11/schedule.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 12</summary>
+		<iframe class="projects" src="./12/login.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 13</summary>
+		<iframe class="projects" src="./13/member.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 14</summary>
+		<iframe class="projects" src="./14/seed_shop.html"></iframe>
+	</details>
+	<details>
+		<summary>프로젝트 15</summary>
+		<iframe class="projects" src="./15/photo_gallary.html"></iframe>
+	</details>
+</body>
+</html>
